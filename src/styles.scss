@@ -1,0 +1,33 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.6;
+  color: #ffffff;
+  background-color: #1e1a22;
+}
+
+@media (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+  }
+}
+
+app-home, app-about {
+  display: block; /* Garante que os componentes sejam blocos */
+  margin: 0;
+  padding: 0;
+}

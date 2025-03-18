@@ -1,0 +1,19 @@
+<div id="contact" class="contact">
+  <form class="contact-form" (submit)="sendEmail($event)">
+    <h2>Contato</h2>
+    <p>Entre em contato conosco para qualquer dúvida.</p>
+    <input type="text" placeholder="Nome" name="name" required>
+    <input type="email" placeholder="E-mail" name="email" required>
+    <input type="number" placeholder="Telefone" name="phone" required>
+    <textarea placeholder="Mensagem" name="message" required></textarea>
+    <button type="submit">Enviar</button>
+  </form>
+  <div class="map">
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.075426745292!2d-46.65342658447564!3d-23.565734367638155!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59c8da0aa315%3A0xd59f9431f2c9776a!2sAv.%20Paulista%2C%20S%C3%A3o%20Paulo%20-%20SP!5e0!3m2!1spt-BR!2sbr!4v1698799999999!5m2!1spt-BR!2sbr"
+      allowfullscreen
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"
+    ></iframe>
+  </div>
+</div>

@@ -1,0 +1,126 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.services {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 20px;
+  text-align: center;
+  background-color: black;
+  color: #fff;
+}
+
+.img-service {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.img-service img {
+  width: 340px;
+  max-width: 100%;
+  height: auto;
+}
+
+h3 {
+  font-size: 1.8rem;
+  margin: 20px 0;
+  color: rgba(254, 235, 106, 0.3);
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin: 58px 20px;
+  gap: 20px;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  padding: 20px;
+  cursor: pointer;
+  border: 1px solid rgba(254, 235, 106, 0.3); /* Borda dourada */
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  gap: 38px;
+  background-color: rgba(255, 255, 255, 0.1); /* Fundo semi-transparente */
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 4px 4px 10px rgba(254, 235, 106, 0.3); /* Sombra dourada */
+}
+
+.card img {
+  width: 120px;
+  object-fit: cover;
+}
+
+.card h3 {
+  font-size: 1.5rem;
+  margin: 10px 0;
+  color: #fff; /* Texto branco */
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .cards {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .img-service img {
+    width: 80%;
+  }
+
+  .card {
+    display: flex;
+    gap: 20px;
+  }
+
+  h3 {
+    color: rgba(254, 234, 106, 0.87);
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .services {
+    padding: 20px 10px;
+  }
+
+  h3 {
+    font-size: 1.2rem;
+    margin-top: 12px;
+  }
+
+  .cards {
+    margin: 20px 0;
+    gap: 15px;
+  }
+
+  .img-service img {
+    width: 100%;
+  }
+
+  .card {
+    padding: 15px;
+  }
+
+  .card img {
+    width: 80px;
+  }
+
+  .img-car {
+    width: 130px;
+  }
+}

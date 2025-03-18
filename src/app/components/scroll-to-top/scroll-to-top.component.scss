@@ -1,0 +1,29 @@
+.scroll-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: rgba(254, 235, 106, 0.3);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  transition: background-color 0.3s ease, transform 0.3s ease, opacity 0.3s ease;
+  opacity: 0; /* Inicialmente invisível */
+  visibility: hidden; /* Inicialmente oculto */
+
+  &.visible {
+    opacity: 1; /* Torna visível */
+    visibility: visible; /* Exibe o botão */
+  }
+
+  &:hover {
+    background-color: rgba(210, 194, 89, 0.3);
+    transform: scale(1.1);
+  }
+}
